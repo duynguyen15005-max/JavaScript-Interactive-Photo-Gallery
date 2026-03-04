@@ -1,18 +1,20 @@
 function upDate(previewPic){
+
     console.log("Mouse over triggered");
     console.log("Alt text:", previewPic.alt);
     console.log("Source:", previewPic.src);
 
     let imageDiv = document.getElementById("image");
 
-    // Change text to alt of previewPic
+    // Change text
     imageDiv.innerHTML = previewPic.alt;
 
-    // Change background
+    // Change background image
     imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
 }
 
 function undo(){
+
     console.log("Mouse left image");
 
     let imageDiv = document.getElementById("image");
